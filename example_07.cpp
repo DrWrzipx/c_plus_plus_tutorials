@@ -32,6 +32,24 @@ int main()
     {
         std::cout << word << "||";
     }
+    std::cout << std::endl;
+    for(std::vector<std::string>::iterator i = vectorOfStrings.begin(); i != vectorOfStrings.end(); ++i)
+    {
+        std::cout << *i << "|||";
+    }
 
     std::cout << std::endl;
+
+    std::sort(vectorOfStrings.begin(), vectorOfStrings.end());
+
+
+    for(std::vector<std::string>::iterator i = vectorOfStrings.begin(); i != vectorOfStrings.end(); ++i)
+    {
+        std::cout << *i << "|||";
+    }
+
+    std::cout << std::endl;
+    std::cout << "Last vector with words is: " << vectorOfStrings.size() << std::endl;
+    vectorOfStrings.pop_back();
+    std::cout << "Last vector with words is: " << vectorOfStrings.size() << std::endl;
 }
